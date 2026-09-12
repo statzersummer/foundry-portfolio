@@ -1,0 +1,50 @@
+body {
+    font-family: Signika, sans-serif;
+    background-image: url("../images/hedge-maze.jpg")
+}
+
+.grid-container {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "about-me about-me about-me featured-sites"
+        "penpal-club-info penpal-club-info bug-report bug-report";
+    
+    gap: 1rem;
+}
+
+.grid-item {
+    padding: 1rem;
+    border-radius: 10px;
+    opacity: 0.92;
+    background-image: url("../images/parchment-texture.jpg");
+}
+
+.about-me {
+    grid-area: about-me;
+}
+
+.featured-sites {
+    grid-area: featured-sites;
+}
+
+.penpal-club-info {
+    grid-area: penpal-club-info;
+}
+
+.bug-report {
+    grid-area: bug-report;
+}
+
+.penpal-club-image {
+    max-width: 27rem;
+}
+
+.tag{
+    background-color: rgb(94, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(216, 195, 132);
+    padding: 0.2rem;
+}

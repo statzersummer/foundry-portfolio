@@ -3,6 +3,10 @@ body {
     background-image: url("../images/hedge-maze.jpg")
 }
 
+a {
+    color: rgb(47, 80, 132);
+}
+
 .grid-container {
     margin: 3rem;
     display: grid;
@@ -38,13 +42,54 @@ body {
     grid-area: bug-report;
 }
 
-.penpal-club-image {
-    max-width: 27rem;
+.nameplate {
+    display: flex;
+    align-items: center;
 }
 
-.tag{
+.nameplate-name {
+    margin: 0px;
+    margin-bottom: 0.6rem;
+}
+
+.nameplate-image {
+    width: 5rem;
+    height: auto;
+    flex-shrink: 0;
+    margin: 1rem;
+}
+
+.nameplate-content {
+    flex: 1;
+}
+
+.penpal-club-image {
+    display: block;
+    width: 25rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tag {
     background-color: rgb(94, 0, 0);
     color: rgb(255, 255, 255);
     border: 2px solid rgb(216, 195, 132);
     padding: 0.2rem;
+}
+
+.info {
+    color: rgb(247, 243, 232);
+    background-color: rgb(47, 80, 132);
+    border: 1px solid rgb(92, 135, 185);
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 4px 0px;
+    text-shadow: rgb(0, 0, 0) 1px 1px 3px;
+}
+
+.discord-like-indent {
+    border-left: 0.2rem solid rgb(92, 135, 185);
+    padding-left: 0.4rem;
+    margin-left: 0.3rem;
 }

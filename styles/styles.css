@@ -93,3 +93,15 @@ a {
     padding-left: 0.4rem;
     margin-left: 0.3rem;
 }
+
+@media (max-width: 768px) {
+    .grid-container {
+        margin: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "about-me"
+            "featured-sites"
+            "penpal-club-info"
+            "bug-report";
+    }
+}
